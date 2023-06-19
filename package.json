@@ -1,5 +1,5 @@
 {
-  "name": "stackblitz-starters-w3yxax",
+  "name": "react-todolist",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,6 +7,7 @@
     "@types/react-dom": "18.2.4",
     "react": "18.2.0",
     "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.2",
     "typescript": "^5.0.4"
   },
   "scripts": {

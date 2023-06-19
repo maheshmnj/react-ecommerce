@@ -1,8 +1,4 @@
-# react-ecommerce
-
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/stackblitz-starters-w3yxax)
-
-<!-- source: https://react-tutorial.app/ -->
+# react-Todoist
 
 ### Runnig the project
 
@@ -10,6 +6,11 @@
 npm install
 npm start
 ```
+
+#### Learnings from the project
+
+We have used TSX files instead of JSX files. TSX files are typescript files that contain JSX code. TSX files are compiled into JS files using the typescript compiler.
+The benefit of using TSX files is that we can use typescript in our react project and get all the benefits of typescript. Mainly we won't have to worry about runtime errors.
 
 ### JSX
 
@@ -212,13 +213,13 @@ import Footer, { Header, Content } from "./Layout";
 
 ### Using props and variables in components
 
-```JSX
+````JSX
 
 1. Using string concatenation
 
 ```JSX
 <img src={'/images/' + props.imageName} />
-```
+````
 
 2. Using template literals
 
@@ -244,5 +245,3 @@ import Footer, { Header, Content } from "./Layout";
 const disabled = true;
 <input type="text" disabled={disabled} />
 ```
-
-

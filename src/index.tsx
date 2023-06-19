@@ -8,9 +8,5 @@ const root = document.querySelector("#root");
 if (rootElement === null) {
   throw new Error("Root element not found");
 } else {
-  // const root = createRoot(rootElement);
-  // root.render(
-
-  // );
   createRoot(rootElement).render(<App />);
 }
