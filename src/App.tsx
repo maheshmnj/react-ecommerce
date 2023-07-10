@@ -1,6 +1,7 @@
 import * as React from "react";
 import "./index.css";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
+import BodyMain from "./components/Body/BodyMain";
 
 export default function App() {
   function handleClick() {
@@ -9,7 +10,8 @@ export default function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar/>
+      <BodyMain />
     </>
   );
 }

@@ -1,0 +1,11 @@
+.body-container {
+    display: flex;
+    flex-direction: row;
+    color: #000;
+    /* take available height */
+    height: 90vh;
+}
+
+.todoBody {
+    width: 100%;
+}

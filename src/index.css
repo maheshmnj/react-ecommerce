@@ -4,50 +4,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,900&display=swap');
 
-/* body {
+body {
     margin: 0;
     padding: 0;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     font-family: 'Poppins', sans-serif;
-}
-*/
-.frost {
-    width: auto;
-    /* height: auto; */
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(5px);
-}
-
-.navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: rgba(207, 76, 76, 0.15);
-    backdrop-filter: blur(5px);
-}
-
-.navbar div {
-    display: flex;
-    flex-direction: row;
-}
-
-
-.navigation-menu ul {
-    display: flex;
-    padding: 0;
-}
-
-.navbar-menu li {
-    list-style-type: none;
-    padding: 0px 16px;
-}
-
-.navigation-menu li a {
-    text-decoration: none;
-    display: block;
-    width: 100%;
 }

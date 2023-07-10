@@ -1,0 +1,11 @@
+.sidebar-left {
+    background-color: aquamarine;
+    width: 200px;
+    height: 100%;
+}
+
+.sidebar-right {
+    background-color: cadetblue;
+    width: 200px;
+    height: 100%;
+}

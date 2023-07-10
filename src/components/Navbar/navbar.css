@@ -1,0 +1,47 @@
+.frost {
+    width: auto;
+    margin: 0px;
+    /* height: auto; */
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    height: 8vh;
+}
+
+.logo {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(207, 76, 76, 0.15);
+    backdrop-filter: blur(5px);
+}
+
+.navbar div {
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation-menu ul {
+    display: flex;
+    padding: 0;
+}
+
+.navbar-menu li {
+    list-style-type: none;
+    /* horizontal vertical */
+    padding: 0px 16px;
+}
+
+.navigation-menu li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
