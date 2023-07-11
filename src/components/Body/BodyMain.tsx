@@ -1,14 +1,19 @@
-import React from 'react'
-import Sidebar from '../Common/Sidebar'
-import TodoBody from './TodoBody'
+import React from "react";
+import Sidebar from "../Common/Sidebar";
+import TodoBody from "./TodoBody";
 import "./body.css";
 const BodyMain = (props: any) => {
-    return <div className="body-container">
-        <Sidebar className="sidebar-left" />
-        <TodoBody />
-        <Sidebar className="sidebar-right" />
+  
+  return (
+    <div className="body-container">
+      <Sidebar
+        className={props.isSidebarOpen ? "sidebar-left" : ""}
+        isSidebarOpen={props.isSidebarOpen }
+      />
+      <TodoBody />
+      <Sidebar className="sidebar-right" />
     </div>
-
-}
+  );
+};
 
 export default BodyMain;
