@@ -14,3 +14,10 @@
     background-color: aqua;
     width: 320px
 }
+
+
+.list-title {
+    display: flex;
+    flex-direction: row;
+
+}
