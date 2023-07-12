@@ -7,9 +7,9 @@ import { faArrowLeft, faChevronLeft, faEllipsisV } from "@fortawesome/free-solid
 
 const MenuTitle = (props: any) => {
   return (
-    <div className="list-title" onClick={props.onMenuClick}>
+    <div className="listtile row" onClick={props.onMenuClick}>
       <div className="menu-icon">
-        <FontAwesomeIcon icon={faChevronLeft} />
+        <FontAwesomeIcon icon={props.icon} />
       </div>
       <div className="list-title-title">
         <h3>{props.title}</h3>
@@ -24,18 +24,18 @@ const Sidebar = (props) => {
   return (
     <>
       {props.isSidebarOpen && (
-        <div className="drawer-content">
-          <div>
+        <div className="drawer">
+          <div className="drawer-header">
             <IconButton aria-label="Example"
               onClick={props.onSidebarClose}>
               <FontAwesomeIcon icon={faChevronLeft} />
             </IconButton>
           </div>
-          <ul>
-            <MenuTitle title="Menu" onMenuClick={() => console.log("clicked")} />
+          <div className="drawer-content">
+            <MenuTitle title="Menu" icon={faChevronLeft} onMenuClick={() => console.log("clicked")} />
             <MenuTitle title="Menu" />
             <MenuTitle title="Menu" />
-          </ul>
+          </div>
         </div>
       )}
     </>

@@ -10,14 +10,30 @@
     height: 100%;
 }
 
-.drawer-content {
+.drawer {
     background-color: aqua;
     width: 320px
 }
 
 
-.list-title {
+.listtile {
+    background-color: #c68b8b;
+}
+
+.row {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
 
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
 }
