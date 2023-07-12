@@ -21,12 +21,6 @@ export default function Navbar(props: any) {
           </li>
         </div>
         <div className="navbar-menu">
-          {/* <li>
-            Home
-          </li>
-          <li>
-            Home
-          </li> */}
           <li>Home</li>
         </div>
       </div>
