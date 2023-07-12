@@ -2,8 +2,7 @@
     display: flex;
     flex-direction: row;
     color: #000;
-    /* take available height */
-    height: 90vh;
+    height: 92vh;
 }
 
 .todoBody {

@@ -9,3 +9,8 @@
     width: 200px;
     height: 100%;
 }
+
+.drawer-content {
+    background-color: aqua;
+    width: 320px
+}

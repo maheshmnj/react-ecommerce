@@ -5,24 +5,27 @@ import BodyMain from "./components/Body/BodyMain";
 import Sidebar from "./components/Common/Sidebar";
 
 export default function App() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  let [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
   const handleSidebarToggle = () => {
     console.log("Toggle from AppBar");
     setIsSidebarOpen(!isSidebarOpen);
   };
 
+  const handleSidebarClose = () => {
+    console.log("Close from BodyMain");
+    setIsSidebarOpen(false);
+  };
+
   return (
     <>
-      <Navbar onSidebarToggle={handleSidebarToggle} />
+      <Navbar
+        isSidebarOpen={isSidebarOpen}
+        onSidebarToggle={handleSidebarToggle} />
       <BodyMain
         isSidebarOpen={isSidebarOpen}
-        onSidebarToggle={handleSidebarToggle}
+        onSidebarClose={handleSidebarClose}
       />
-      {/* <Sidebar
-        isSidebarOpen={isSidebarOpen}
-        onSidebarToggle={handleSidebarToggle}
-      /> */}
     </>
   );
 }
